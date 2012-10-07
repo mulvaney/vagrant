@@ -10,6 +10,8 @@ apt_repository "emacs24" do
   uri "http://ppa.launchpad.net/cassou/emacs/ubuntu"
   distribution node['lsb']['codename']
   components ["main"]
+  keyserver "keyserver.ubuntu.com"
+  key "8FBB7709281B6E626DD855CF84DBCE2DCEC45805"
 end
 
 execute "apt-get update"

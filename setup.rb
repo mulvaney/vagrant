@@ -4,13 +4,9 @@ topdir = Dir.pwd
 
 cookbooks_dir = File.join(topdir, 'cookbooks')
 
-# set up the cookbooks link
-unless  File.exists?("standard/cookbooks")
-  puts "need to make cookbook link"
-end
-
 cookbooks = {
     "apt" => "https://github.com/opscode-cookbooks/apt.git",
+    "java" => "https://github.com/opscode-cookbooks/java.git",
     "memcached" => "https://github.com/opscode-cookbooks/memcached.git"
 }
 
