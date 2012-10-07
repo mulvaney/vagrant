@@ -4,7 +4,7 @@ license           "Apache 2.0"
 description       "Installs a development box with the tools I need on it"
 long_description  IO.read(File.join(File.dirname(__FILE__), 'README.md'))
 version           "1.0.0"
-depends           ["apt"]
+depends           ["apt", "rbenv"]
 
 recipe "developmentbox", "installs all development stuff"
 

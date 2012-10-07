@@ -19,4 +19,12 @@ execute "apt-get update"
 package "emacs24"
 package "emacs24-el"
 
+# set up rbenv
+include_recipe "rbenv::default"
+include_recipe "rbenv::ruby_build"
+
+rbenv[:group_users] = ["vagrant"]
+
+rbenv_ruby "1.9.3-p194"
+
 
