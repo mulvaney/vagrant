@@ -3,6 +3,8 @@
 # Recipe:: default
 #
 
+package "tmux"
+
 # Emacs needs aspell
 package "aspell-en"
 
