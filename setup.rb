@@ -1,6 +1,6 @@
 #!/usr/bin/env ruby
 
-topdir = Dir.pwd
+topdir = File.absolute_path(File.dirname(__FILE__))
 
 cookbooks_dir = File.join(topdir, 'cookbooks')
 

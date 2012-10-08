@@ -29,3 +29,7 @@ rbenv_gem "bundler" do
   ruby_version "1.9.3-p194"
 end
 
+link "/home/vagrant/.emacs.d" do
+  to "/home/vagrant/Misc/emacs.d"
+  only_if "test -e /home/vagrant/Misc/emacs.d"
+end
