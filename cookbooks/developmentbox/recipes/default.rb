@@ -3,6 +3,9 @@
 # Recipe:: default
 #
 
+# Emacs needs aspell
+package "aspell-en"
+
 # Add in emacs 24 via ppa
 include_recipe "apt"
 
