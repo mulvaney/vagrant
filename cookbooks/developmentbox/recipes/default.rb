@@ -23,8 +23,9 @@ package "emacs24-el"
 include_recipe "rbenv::default"
 include_recipe "rbenv::ruby_build"
 
-rbenv[:group_users] = ["vagrant"]
-
 rbenv_ruby "1.9.3-p194"
 
+rbenv_gem "bundler" do
+  ruby_version "1.9.3-p194"
+end
 
