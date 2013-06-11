@@ -31,10 +31,10 @@ package "cvs"
 include_recipe "rbenv::default"
 include_recipe "rbenv::ruby_build"
 
-rbenv_ruby "1.9.3-p194"
+rbenv_ruby "1.9.3-p429"
 
 rbenv_gem "bundler" do
-  ruby_version "1.9.3-p194"
+  ruby_version "1.9.3-p429"
 end
 
 link "/home/vagrant/.emacs.d" do
