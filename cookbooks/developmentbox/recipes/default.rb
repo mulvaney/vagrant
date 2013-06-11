@@ -24,6 +24,9 @@ execute "apt-get update"
 package "emacs24"
 package "emacs24-el"
 
+package "ncurses-env"
+package "cvs"
+
 # set up rbenv
 include_recipe "rbenv::default"
 include_recipe "rbenv::ruby_build"
