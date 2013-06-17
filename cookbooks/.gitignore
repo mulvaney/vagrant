@@ -2,4 +2,11 @@ apt
 git
 java
 memcached
+runit
+build-essential
+yum
+windows
+chef_handler
+ohai
 rbenv
+dmg
